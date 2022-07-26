@@ -17,14 +17,6 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -42,26 +34,3 @@
   clip-path: inset(100%);
 }
 
-.scroll-lock-ios {
-  position: fixed;
-
-  overflow: hidden;
-}
-
-.scroll-lock {
-  overflow: hidden;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.no-transition {
-  /* stylelint-disable-next-line */
-  transition: none !important;
-}

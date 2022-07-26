@@ -1,0 +1,154 @@
+.catalog {
+  padding: 120px 118px;
+
+  @media (max-width: 768px) {
+    padding: 100px 60px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 65px 25px;
+  }
+}
+
+.catalog__card {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  }
+
+  &:hover {
+    .catalog__card-active {
+      display: block;
+    }
+  }
+
+  & img {
+    @media (max-width: 768px) {
+      width: 309px;
+      height: 386px;
+    }
+
+    @media (max-width: 320px) {
+      width: 270px;
+      height: 386px;
+    }
+  }
+}
+
+.catalog__card-title {
+  position: absolute;
+  top: 332px;
+  right: 64px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-aliceblue;
+
+  @media (max-width: 768px) {
+    top: 333px;
+    right: 120px;
+  }
+
+  @media (max-width: 320px) {
+    top: 337px;
+    right: 90px;
+  }
+}
+
+.catalog__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  justify-items: stretch;
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 309px);
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(auto-fill, 270px);
+  }
+}
+
+.catalog__card-active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  background: $color-default-tangaroa;
+  box-shadow: 0 4px 35px #011c4026;
+  padding: 32px 25px 35px;
+  color: $color-aliceblue;
+
+  @media (max-width: 768px) {
+    padding: 35px 35px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 35px 25px;
+  }
+}
+
+.catalog__card-subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog__card-title--active {
+  position: static;
+  margin-bottom: 15px;
+}
+
+.catalog__card-content {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog__card-button {
+  background: $color-aliceblue;
+  color: $color-default-tangaroa;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  padding: 10px 46px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.catalog__title {
+  margin: 0 0 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: 320px) {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
