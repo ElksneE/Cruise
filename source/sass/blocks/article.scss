@@ -66,9 +66,14 @@
     width: 324px;
   }
 
+  @media (max-width: 767px) {
+    width: 290px;
+  }
+
   & img {
     width: 560px;
     height: 301px;
+    object-fit: cover;
 
     @media (max-width: 1023px) {
       width: 324px;

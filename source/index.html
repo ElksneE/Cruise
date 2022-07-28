@@ -52,7 +52,7 @@
             <use xlink:href="#logo"></use>
           </svg>
         </div>
-        <ul class="header__nav">
+        <ul class="header__nav header__nav--active">
           <li class="header__logo header__logo--nav">
             <svg width="79" height="38">
               <use xlink:href="#logo"></use>
@@ -73,7 +73,7 @@
         </ul>
 
         <div class="header__toggle-wrapper">
-          <button class="header__toggle" type="button">
+          <button class="header__toggle header__toggle--active" type="button">
             <span class="visually-hidden">Открыть/Закрыть меню</span>
           </button>
         </div>
@@ -231,7 +231,7 @@
             <source type="image/webp" media="(max-width: 1024px)"
               srcset="../img/cruise/odysseus/odysseus-tablet.webp 1x, ../img/cruise/odysseus/odysseus-tablet@2x.webp 2x">
             <source type="image/webp"
-              srcset="../img/cruise/odysseus/odysseus-desktop.webp 1x, ../img/cruise/odysseus/odysseus/odysseus-desktop@2x.webp 2x">
+              srcset="../img/cruise/odysseus/odysseus-desktop.webp 1x, ../img/cruise/odysseus/odysseus-desktop@2x.webp 2x">
             <!-- 1х: 260px; 2x: 520px -->
             <img src="../img/cruise/odysseus/odysseus-desktop.jpg" width="260" height="386"
               srcset="../img/cruise/odysseus/odysseus-desktop@2x.jpg" alt="пейзаж">
@@ -370,11 +370,11 @@
         <form class="booking__form">
           <fieldset class="booking__group">
             <legend class="booking__group-title">Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
-            <label for="name" class="visually-hidden"></label>
+            <label for="name" class="visually-hidden">Имя</label>
             <input type="text" placeholder="Имя" name="name" required id="name">
-            <label for="tel" class="visually-hidden"></label>
+            <label for="tel" class="visually-hidden">Телефон</label>
             <input type="tel" placeholder="Телефон" name="telephon" required id="tel">
-            <label for="email" class="visually-hidden"></label>
+            <label for="email" class="visually-hidden">Email</label>
             <input type="email" placeholder="Email" name="email" required id="email">
           </fieldset>
           <fieldset class="booking__group">
@@ -384,7 +384,7 @@
               Я согласен на обработку моих персональных данных
             </label>
           </fieldset>
-          <button class="booking__buttom" type="button">Оcтавить заявку</button>
+          <button class="booking__buttom" type="submit">Оcтавить заявку</button>
         </form>
       </div>
 
