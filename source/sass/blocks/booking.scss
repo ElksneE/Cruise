@@ -9,21 +9,32 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main/booking@2x.jpg");
   }
+
+  @media (max-width: 1023px) {
+    background-image: url("../img/main/booking-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/booking-tablet@2x.jpg");
+    }
+  }
 }
 
 .booking__wrapper {
-  padding: 50px 163px 50px 163px;
+  padding-top: 46px;
+  padding-right: 160px;
+  padding-bottom: 56px;
+  padding-left: 160px;
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 1023px) {
-    padding: 100px 174px;
+    padding: 87px 174px 100px;
     flex-direction: column;
     align-items: center;
   }
 
   @media (max-width: 767px) {
-    padding: 65px 30px;
+    padding: 57px 30px;
   }
 }
 
@@ -31,10 +42,12 @@
   display: flex;
   flex-direction: column;
   width: 493px;
+  margin-right: 20px;
   justify-content: center;
-  margin-bottom: 53px;
 
   @media (max-width: 1023px) {
+    margin-bottom: 53px;
+    margin-right: 0;
     width: 419px;
     text-align: center;
   }
@@ -50,6 +63,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
+  margin-bottom: 5px;
 
   @media (max-width: 1023px) {
     font-size: 34px;
@@ -68,9 +82,9 @@
   margin: 0;
   font-size: 18px;
   line-height: 27px;
+  width: 352px;
 
   @media (max-width: 1023px) {
-    width: 352px;
     align-self: center;
   }
 
@@ -83,13 +97,22 @@
 
 .booking__form {
   width: 403px;
+  min-width: 403px;
   padding: 45px 50px;
   background: $color-default-tangaroa;
   color: $color-aliceblue;
 
+  @media (max-width: 1023px) {
+    padding: 33px 28px 53px;
+  }
+
   @media (max-width: 767px) {
     width: 290px;
-    padding: 33px 28px;
+    min-width: 290px;
+    padding-top: 33px;
+    padding-right: 28px;
+    padding-bottom: 53px;
+    padding-left: 28px;
   }
 }
 
@@ -97,6 +120,10 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
 
   & input {
     border: none;
@@ -109,8 +136,15 @@
     width: 100%;
   }
 
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    color: #011c40;
+    font-size: 14px;
+  }
+
   & :last-child {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
 
     @media (max-width: 767px) {
       margin-bottom: 23px;
@@ -134,12 +168,14 @@
 }
 
 .booking__checkbox {
+  cursor: pointer;
   display: block;
   border: none;
   font-size: 10px;
   line-height: 130%;
 
   & input {
+    cursor: pointer;
     margin: 0;
     padding: 0;
     position: relative;
@@ -168,12 +204,19 @@
     font-size: 10px;
     line-height: 120%;
   }
+
+  @media (max-width: 420px) {
+    &:last-child {
+      text-align: left;
+    }
+  }
 }
 
 .booking__buttom {
+  cursor: pointer;
   background: $color-aliceblue;
   width: 100%;
-  padding: 15px 15px;
+  padding: 12px;
   border: none;
   font-weight: 600;
   font-size: 14px;

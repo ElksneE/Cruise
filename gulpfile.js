@@ -23,7 +23,7 @@ const css = () => {
     .pipe(postcss([autoprefixer({
       grid: true,
     })]))
-    .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
+    // .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
     .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('style.min.css'))

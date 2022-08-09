@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -129,4 +130,9 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
+}
+
+.body__overflow--stop {
+  overflow: hidden;
 }
