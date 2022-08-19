@@ -22,8 +22,8 @@
   }
 
   @media (max-width: 767px) {
-    padding-top: 59px;
-    padding-bottom: 55px;
+    padding-top: 55px;
+    padding-bottom: 61px;
   }
 }
 
@@ -49,40 +49,30 @@
 }
 
 .advantage__card-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 30px;
 
   @media (max-width: 1023px) {
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(auto-fill, minmax(206px, 1fr));
   }
 
-  @media (max-width: 768px) {
-    justify-content: space-between;
-    column-gap: 27px;
-  }
-  
   @media (max-width: 767px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
 .advantage__card {
-  width: 360px;
   min-width: 206px;
   background: $color-aliceblue;
-  padding: 87px 34px 25px 30px;
+  padding: 83px 34px 25px 30px;
 
   @media (max-width: 1023px) {
-    width: 206px;
     padding: 71px 12px 21px 20px;
   }
 
   @media (max-width: 767px) {
-    width: auto;
-    padding: 68px 15px 25px 20px;
+    padding: 66px 15px 25px 20px;
   }
 
   &--ship {

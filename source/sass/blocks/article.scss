@@ -11,12 +11,12 @@
 
   @media (max-width: 767px) {
     flex-direction: column;
-    padding-top: 58px;
-    padding-bottom: 62px;
+    padding-top: 60px;
+    padding-bottom: 68px;
   }
 
   &--blackout {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 43, 102, 0.5);
   }
 }
 
@@ -48,7 +48,7 @@
     width: 205px;
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 
   @media (max-width: 767px) {

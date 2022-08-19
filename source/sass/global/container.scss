@@ -1,17 +1,17 @@
 .container {
-  // max-width: 1366px;
+  max-width: 1366px;
   margin: 0 auto;
   padding-left: 103px;
   padding-right: 103px;
 
   @media (max-width: 1024px) {
-    // width: 768px;
+    max-width: 768px;
     padding-left: 45px;
     padding-right: 45px;
   }
 
   @media (max-width: 767px) {
-    // width: 320px;
+    max-width: none;
     padding-left: 15px;
     padding-right: 15px;
   }

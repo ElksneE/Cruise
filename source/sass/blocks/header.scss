@@ -30,11 +30,11 @@
 .header__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 27px;
+  padding-top: 19px;
   padding-bottom: 283px;
 
   @media (max-width: 1023px) {
-    padding-top: 30px;
+    padding-top: 27px;
     padding-bottom: 274px;
   }
 
@@ -45,7 +45,7 @@
 
   &--blackout {
     @media (max-width: 767px) {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 43, 102, 0.5);
     }
   }
 }
@@ -76,8 +76,8 @@
   &--active {
     @media (max-width: 767px) {
       display: flex;
-      height: 100%;
-      width: 100%;
+      height: 570px;
+      width: 90%;
       outline: none;
       overflow-y: scroll;
       position: fixed;
@@ -91,13 +91,16 @@
   &--nojs {
     @media (max-width: 767px) {
       display: flex;
+      position: fixed;
       width: 100%;
+      height: 521px;
       outline: none;
-      right: 20px;
       left: 0;
+      right: 0;
       transition: 0.5s;
       z-index: 200;
       flex-wrap: nowrap;
+      margin-top: 22px;
     }
   }
 }
@@ -106,7 +109,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 184px;
+  margin-bottom: 195px;
 
   @media (max-width: 1023px) {
     margin-bottom: 206px;
@@ -151,6 +154,7 @@
   @media (max-width: 767px) {
     font-size: 36px;
     line-height: 45px;
+    margin: 0 0 11px;
   }
 }
 
@@ -200,7 +204,7 @@
 }
 
 .header__nav-item {
-  padding: 17px;
+  padding: 8px 23px 12px 11px;
   align-items: center;
 
   &:last-child {
@@ -214,7 +218,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 8px 10px 19px 8px;
+    padding: 10px 10px 19px 8px;
   }
 }
 
@@ -243,7 +247,6 @@
 
 .header__logo {
   align-items: center;
-  align-self: center;
 }
 
 .header__logo svg {
@@ -300,7 +303,7 @@
     position: absolute;
     top: -5px;
     left: 0;
-    width: 18px;
+    width: 24px;
     height: 2px;
     background-color: $color-aliceblue;
   }
@@ -310,7 +313,7 @@
     position: absolute;
     top: 5px;
     left: 0;
-    width: 18px;
+    width: 24px;
     height: 2px;
     background-color: $color-aliceblue;
   }
@@ -325,18 +328,25 @@
     z-index: 200;
     position: fixed;
     top: 30px;
-    right: 15px;
+    right: 2px;
     left: auto;
+
+    @media (max-width: 767px) {
+      width: 18px;
+    }
   }
 
   &::after {
     transform: rotate(-45deg);
     background-color: $color-default-black;
-    top: 0;
+    top: 30px;
     z-index: 200;
     position: fixed;
-    top: 30px;
-    right: 15px;
+    right: 2px;
     left: auto;
+
+    @media (max-width: 767px) {
+      width: 18px;
+    }
   }
 }
