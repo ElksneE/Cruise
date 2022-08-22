@@ -133,6 +133,10 @@ button,
   user-select: none;
 }
 
+.main--blackout {
+  opacity: 0;
+}
+
 .body__overflow--stop {
   overflow: hidden;
 }

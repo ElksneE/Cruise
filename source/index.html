@@ -57,15 +57,41 @@
 
 
     </svg>
+
+    <ul class="header__nav header__nav--nojs">
+      <li class="header__logo header__logo--nav">
+        <svg width="79" height="38">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </li>
+      <li class="header__logo header__logo--nav">
+        <svg width="79" height="38">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </li>
+      <li class="header__nav-item">
+        <a href="#advantage" class="header__nav-link">Преимущества</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#article" class="header__nav-link">Направления</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#catalog" class="header__nav-link">Ближайшие круизы</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#contact" class="header__nav-link">Контакты</a>
+      </li>
+    </ul>
+
     <header class="header">
       <div class="container header__wrapper">
-        <div class="header__button">
+        <div class="header__button header__button--nojs">
           <div class="header__logo">
             <svg width="79" height="38">
               <use xlink:href="#logo"></use>
             </svg>
           </div>
-          <ul class="header__nav header__nav--nojs">
+          <ul class="header__nav">
             <li class="header__logo header__logo--nav">
               <svg width="79" height="38">
                 <use xlink:href="#logo"></use>
@@ -89,10 +115,9 @@
               <a href="#contact" class="header__nav-link">Контакты</a>
             </li>
           </ul>
-
           <div class="header__toggle-wrapper">
             <button class="header__toggle header__toggle--active" type="button">
-              <span class="visually-hidden">Открыть/Закрыть меню</span>
+              <span class="visually-hidden visually-hidden--nofixed ">Открыть/Закрыть меню</span>
             </button>
           </div>
 
@@ -477,5 +502,4 @@
 
   <script src="js/main.min.js"></script>
 </body>
-
 </html>
