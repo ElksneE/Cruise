@@ -169,11 +169,10 @@
   margin-bottom: 28px;
 
   & input {
-    width: 0;
-    height: 0;
     position: absolute;
     opacity: 0;
     z-index: -1;
+    width: auto;
   }
 
   & input:checked {
@@ -254,6 +253,10 @@
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 1;
   }
 
   @media (max-width: 767px) {

@@ -844,7 +844,7 @@ button,
     z-index: 200;
     position: fixed;
     top: 30px;
-    right: 2px;
+    right: 12px;
     left: auto; }
     @media (max-width: 767px) {
       .header__toggle--active::before {
@@ -857,7 +857,7 @@ button,
     top: 30px;
     z-index: 200;
     position: fixed;
-    right: 2px;
+    right: 12px;
     left: auto; }
     @media (max-width: 767px) {
       .header__toggle--active::after {
@@ -1447,15 +1447,21 @@ button,
     outline-style: none;
     outline-color: none;
     width: 260px; }
-    .catalog__card:hover .catalog__card-active p {
-      margin-bottom: 25px; }
     @media (max-width: 1023px) {
       .catalog__card:hover .catalog__card-active {
         width: 309px; } }
     @media (max-width: 767px) {
       .catalog__card:hover .catalog__card-active {
-        margin: 0 auto;
         width: 270px; } }
+    .catalog__card:hover .catalog__card-active img {
+      width: 100%; }
+      @media (max-width: 1023px) {
+        .catalog__card:hover .catalog__card-active img {
+          min-width: 309px;
+          height: 386px; } }
+      @media (max-width: 767px) {
+        .catalog__card:hover .catalog__card-active img {
+          min-width: 270px; } }
   .catalog__card:focus .catalog__card-active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1472,6 +1478,12 @@ button,
             justify-content: space-between;
     outline-style: none;
     outline-color: none; }
+    @media (max-width: 1023px) {
+      .catalog__card:focus .catalog__card-active {
+        width: 309px; } }
+    @media (max-width: 767px) {
+      .catalog__card:focus .catalog__card-active {
+        width: 270px; } }
   .catalog__card img {
     width: 100%; }
     @media (max-width: 1023px) {
@@ -1760,11 +1772,10 @@ button,
   line-height: 130%;
   margin-bottom: 28px; }
   .booking__checkbox input {
-    width: 0;
-    height: 0;
     position: absolute;
     opacity: 0;
-    z-index: -1; }
+    z-index: -1;
+    width: auto; }
   .booking__checkbox input:checked + span::before {
     -webkit-transform: translate(-50%, -50%) scale(1);
         -ms-transform: translate(-50%, -50%) scale(1);
@@ -1833,6 +1844,8 @@ button,
   color: #011c40; }
   .booking__buttom:hover {
     opacity: 0.6; }
+  .booking__buttom:focus {
+    opacity: 1; }
   @media (max-width: 767px) {
     .booking__buttom {
       padding: 10px; } }
