@@ -1,4 +1,5 @@
 const burgerMenu = () => {
+  const wrapper = document.querySelector('.wrapper');
   const headerWrapper = document.querySelector('.header__wrapper');
   const wrapperButton = document.querySelector('.header__toggle-wrapper');
   const header = document.querySelector('.header');
@@ -9,7 +10,6 @@ const burgerMenu = () => {
   const content = document.querySelector('.article');
   const headerContent = document.querySelector('.header__content');
   const logoHeader = header.querySelector('.header__logo');
-  const mainContent = document.querySelector('main');
   const burgerCross = document.querySelector('.visually-hidden--nofixed');
   let navLinks = nav.querySelectorAll('a');
   navNoJs.classList.add('header__nav--js');
@@ -22,11 +22,11 @@ const burgerMenu = () => {
     content.classList.remove('article--blackout');
     headerContent.classList.remove('header__content--blackout');
     logoHeader.classList.remove('header__logo--blackout');
-    mainContent.classList.remove('main--blackout');
     burgerCross.classList.remove('visually-hidden--nofixed');
   };
   cleanAfterburger();
   wrapperButton.addEventListener('click', () => {
+    wrapper.classList.toggle('wrapper--opacity');
     button.classList.toggle('header__toggle--active');
     nav.classList.toggle('header__nav--active');
     document.body.classList.toggle('body__overflow--stop');
@@ -34,7 +34,6 @@ const burgerMenu = () => {
     content.classList.toggle('article--blackout');
     headerContent.classList.toggle('header__content--blackout');
     logoHeader.classList.toggle('header__logo--blackout');
-    mainContent.classList.toggle('main--blackout');
   });
   headerWrapper.addEventListener('click', (e) => {
     if (e.target.classList.contains('header__wrapper--blackout')) {

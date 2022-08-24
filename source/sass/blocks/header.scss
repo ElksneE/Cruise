@@ -76,15 +76,15 @@
   &--active {
     @media (max-width: 767px) {
       display: flex;
-      height: 570px;
+      height: 100%;
       width: 93%;
       outline: none;
       overflow-y: scroll;
       position: fixed;
       top: 0;
       transition: 0.5s;
-      z-index: 200;
       flex-wrap: nowrap;
+      z-index: 400;
     }
   }
 
@@ -301,6 +301,7 @@
 
 .header__toggle-wrapper {
   display: none;
+  z-index: 400;
 
   @media (max-width: 767px) {
     display: block;
